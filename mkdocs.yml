@@ -1,10 +1,59 @@
 site_name: HOAC-OS2EDU
 site_url: https://HOAC-OS2EDU.github.io/HOAC-OS2EDU/
+repo_url: https://github.com/HOAC-OS2EDU/HOAC-OS2EDU/
+repo_name: HOAC-OS2EDU
+
 nav:
   - 主页: index.md
   - 友群链接: friend.md
   - 资料分享: share.md
   - 群友维护项目/博客: project.md
   - 关于: about.md
+
 theme:
   name: 'material'
+  language: zh
+  # logo: assets/logo/my-logo.png
+  # favicon: assets/logo/my-logo.png
+  features:
+    - search.suggest
+    - search.highlight
+    - content.code.copy # 代码块右上角的复制按钮
+  font:
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      # primary: white
+      # accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      # primary: black
+      # accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 切换到浅色模式
+
+extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/HOAC-OS2EDU
+    - icon: material/email
+      link: mailto:openatom_club@hust.edu.cn
+      name: hust.edu.cn
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+copyright: Copyright &copy; 2024 HOAC-OS2EDU
